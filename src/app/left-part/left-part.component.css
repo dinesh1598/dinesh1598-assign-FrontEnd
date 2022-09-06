@@ -1,0 +1,19 @@
+
+@media all and (max-width:600px){
+    *
+    {
+        background-color: aliceblue;
+        max-width:max-content;
+        font-size: auto;
+        
+    }
+}
+@media all and (max-width:2000px){
+    *
+    {
+        background-color: aliceblue;
+        max-width:max-content;
+        font-size: 18px;
+        
+    }
+}
