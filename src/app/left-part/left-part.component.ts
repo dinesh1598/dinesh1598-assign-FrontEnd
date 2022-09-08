@@ -15,3 +15,4 @@ export class LeftPartComponent implements OnInit {
   }
 
 }
+

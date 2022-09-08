@@ -1,0 +1,14 @@
+.nav2{
+
+    margin-left: 21%;
+    padding:0px 0px  15px  0px;
+   
+    
+   
+}
+.nav2 a{
+    font-size: 14px;
+    font-weight: lighter;
+    color:black;
+    border-bottom: 3px solid blue;
+}
