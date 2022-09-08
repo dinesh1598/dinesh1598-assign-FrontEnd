@@ -1,30 +1,55 @@
-<div class="nav-container">
-    <nav>
-        <div class="logo">
-            <img src="assets/logo1.svg" alt="logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#" >Laptops</a></li>
-            <li><a href="#">Desktop PCs</a></li>
-            <li><a href="#">Networking Devices</a></li>
-            <li><a href="#" >Printers & Scanners</a></li>
-            <li><a href="#">PC Parts</a></li>
-            <li><a href="#" >All Other Products</a></li>
-            <li><a href="#" >Repairs</a></li>
 
-        </ul>
-        <div class="arrow">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+    <div class="row">
+        <div class="nav-container">
+
+            <nav>
+                <div class="logo">
+                    <img src="assets/logo1.svg" alt="logo">
+                </div>
+                <ul class="nav-links fw-bold">
+                    <li><a href="#" >Laptops</a></li>
+                    <li><a href="#">Desktop PCs</a></li>
+                    <li><a href="#">Networking Devices</a></li>
+                    <li><a href="#" >Printers & Scanners</a></li>
+                    <li><a href="#">PC Parts</a></li>
+                    <li><a href="#" >All Other Products</a></li>
+                    <li><a href="#" >Repairs</a></li>
+        
+                </ul>
+                <div class="arrow">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+        
+                </div>
+               
+            </nav>
+        </div>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+                             
+                                <app-about-product></app-about-product>
+            
+        </div>
+        <div class="col-md-auto " >
+            <label>Price ${{ defaultAmount}}.00</label>
+            <input type="number" min="0" value="1" size="2" [(ngModel)]="input" oninput="validity.valid||(value='')"  >
+        
 
         </div>
-       
-    </nav>
+        <div class="col col-lg-2">
+                                <div class="btn">
+                <button class="btn btn-primary" (click)="pay(299*input)">Buy Now</button>
+                                </div>
+        </div>
+      
+    </div>
+   
+    
 </div>
-<div class="nav2">
-    <a href="#">About Product</a>
-</div>
+
 <hr>
 
 
@@ -44,7 +69,9 @@
     
         </div>
         <div class="col-5">
-            
+            <div class="in"> <app-right-part [images]="images" [autoSlide]="true"></app-right-part> 
+            </div>
+           
             
         </div>
     
